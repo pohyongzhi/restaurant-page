@@ -1,0 +1,145 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styling */
+header > nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    align-items: center;
+    margin: 5rem;
+}
+
+#nav-title {
+    font-size: 56px;
+}
+
+#nav-btn-group {
+    display: flex;
+    gap: 3rem;
+}
+
+#nav-btn-group > button {
+    font-weight: 900;
+    font-size: 20px;
+    border: none;
+    background-color: white;
+}
+
+#reservation-btn {
+    font-weight: 900;
+    font-size: 20px;
+    background-color: white;
+    padding: 0.5rem 1.25rem;
+}
+
+/* Main Page */
+/* Content Styling */
+#content {
+    display: flex;
+}
+
+#content-desc-group {
+    padding-top: 5rem;
+    padding-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+#content-img {
+    width: 650px;
+}
+
+/* Menu page */
+#menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.menu-item {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid black;
+    padding: 1.5rem;
+}
+
+/* About Page */
+#about {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10rem;
+    gap: 1rem;
+}
