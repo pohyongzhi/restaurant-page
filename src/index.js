@@ -1,3 +1,5 @@
+import "./style.css";
+
 export function home() {
     const content = document.querySelector("#content");
 
