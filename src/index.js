@@ -1,4 +1,5 @@
 import "./style.css";
+import noodle from "../src/assets/noodle.jpg";
 
 export function home() {
     const content = document.querySelector("#content");
@@ -30,7 +31,7 @@ export function home() {
     // Create right side
     const contentImg = document.createElement("img");
     contentImg.id = "content-img";
-    contentImg.src = "assets/noodle.jpg";
+    contentImg.src = noodle;
     contentImg.alt = "Image of Pasta";
 
     content.append(contentDescGroup);
